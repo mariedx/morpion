@@ -17,6 +17,8 @@ class Board
   end
 
   def show_board
+  puts " "
+  puts " "
    puts "      1      2     3   "
    puts "         |      |      "
    puts " A   #{@A1.state}   |   #{@A2.state}  |   #{@A3.state}  "
@@ -27,10 +29,12 @@ class Board
    puts "         |      |      "
    puts " C   #{@C1.state}   |   #{@C2.state}  |   #{@C3.state}  "
    puts "         |      |      "
+   puts " "
+   puts " "
   end
 
   def plays(player)
-    puts "Où veux tu placer ton symbole?"
+    puts "#{player.name}, c'est ton tour! Où veux tu placer ton symbole?"
     print ">"
     choice = gets.chomp
 
@@ -54,7 +58,9 @@ class Board
     when "c3"
       @C3.state = player.symbol if @C3.state == " "
     else 
-      puts "Ecris ta reponse sous la forme a1'"
+      puts "Ecris ta reponse sous la forme a1 stp'"
+      print ">"
+      choice = gets.chomp
     end
   end
 
