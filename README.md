@@ -8,7 +8,7 @@ Pour jouer : lance le fichier “app.rb” depuis ton terminal.
 
 Nos classes sont toutes rangées dans le dossier lib/app.
 
-On est assez du rendu, on éspère que ca te plaiera. 
+On est assez du rendu, on éspère que ca te plaiera (notamment les emojis).
 
 Enjoy =))))))
 
